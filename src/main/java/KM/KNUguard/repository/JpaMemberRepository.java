@@ -29,7 +29,7 @@ public class JpaMemberRepository implements MemberRepository{
 
     //마찬가지로 JPA가 자동으로 select문 돌려서 찾은 뒤 Member객체 반환.
     @Override
-    public Optional<Member> findById(Long id) {
+    public Optional<Member> findById(String id) {
         Member member = em.find(Member.class, id);
         return Optional.ofNullable(member);
     }
