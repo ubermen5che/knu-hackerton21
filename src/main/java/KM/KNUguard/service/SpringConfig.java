@@ -53,4 +53,8 @@ public class SpringConfig {
         return new CrawlDataRepositoryImpl(em);
     }
 
+    @Bean
+    public GeocodingService geocodingService(){
+        return new GeocodingService(crawlDataRepository);
+    }
 }
