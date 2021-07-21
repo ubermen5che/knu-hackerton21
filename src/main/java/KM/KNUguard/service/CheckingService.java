@@ -15,7 +15,11 @@ public class CheckingService {
         this.crawlDataRepository = crawlDataRepository;
     }
 
-    public List<CrawlData> getCPInfo(String univ_name, Double latitude, Double longitude){
-        return crawlDataRepository.getCrawlData(univ_name, latitude, longitude);
+    public List<CrawlData> getCPInfoUniv(String univ_name, Float latitude, Float longitude){
+        return crawlDataRepository.getCrawlDataUniv(univ_name, latitude, longitude);
+    }
+
+    public List<CrawlData> getCPInfo(Float latitude, Float longitude){
+        return crawlDataRepository.getCrawlData(latitude, longitude);
     }
 }
