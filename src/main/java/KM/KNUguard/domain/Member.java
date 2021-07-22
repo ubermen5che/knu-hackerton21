@@ -3,6 +3,7 @@ package KM.KNUguard.domain;
 import javax.persistence.*;
 
 @Entity
+@Table(name = "Member")
 public class Member {
 
     //db가 알아서 PK를 생성해주는것을 Identity라고 한다.

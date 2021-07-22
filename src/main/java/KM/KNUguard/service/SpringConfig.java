@@ -1,9 +1,6 @@
 package KM.KNUguard.service;
 
-import KM.KNUguard.repository.CrawlDataRepository;
-import KM.KNUguard.repository.CrawlDataRepositoryImpl;
-import KM.KNUguard.repository.JpaMemberRepository;
-import KM.KNUguard.repository.MemberRepository;
+import KM.KNUguard.repository.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -16,13 +13,15 @@ public class SpringConfig {
     private final MemberRepository memberRepository;
     private final CrawlDataRepository crawlDataRepository;
     private final EntityManager em;
+    private final UnivDataRepository univDataRepository;
 
     @Autowired
     public SpringConfig(MemberRepository memberRepository, EntityManager em, CrawlDataRepository
-                        crawlDataRepository){
+                        crawlDataRepository, UnivDataRepository univDataRepository){
         this.em = em;
         this.crawlDataRepository = crawlDataRepository;
         this.memberRepository = memberRepository;
+        this.univDataRepository = univDataRepository;
     }
 
     /**
@@ -36,6 +35,11 @@ public class SpringConfig {
     @Bean
     public MemberService memberService(){
         return new MemberService(memberRepository);
+    }
+
+    @Bean
+    public LoginService loginService(){
+        return new LoginService();
     }
 
     @Bean
@@ -56,5 +60,9 @@ public class SpringConfig {
     @Bean
     public GeocodingService geocodingService(){
         return new GeocodingService(crawlDataRepository);
+    }
+    @Bean
+    public UnivDataRepository univDataRepository(){
+        return new UnivDataRepositoryImpl(em);
     }
 }

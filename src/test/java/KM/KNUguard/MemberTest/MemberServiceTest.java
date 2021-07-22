@@ -26,11 +26,11 @@ public class MemberServiceTest {
     void join() {
         //given
         Member member = new Member();
-        member.setId("serepa03@gmail.com");
+        member.setId("test2@gmail.com");
         member.setPw("12345");
-        member.setUniv_name("경북대학교");
-        member.setM_latitude(123.123);
-        member.setM_longitude(58.123123);
+        member.setUniv_name("부산대학교");
+        member.setM_latitude(125.123);
+        member.setM_longitude(53.44213);
         member.setName("spring");
 
         //when

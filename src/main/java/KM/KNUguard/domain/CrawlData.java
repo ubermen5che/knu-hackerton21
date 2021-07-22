@@ -4,11 +4,12 @@ import javax.persistence.*;
 import java.sql.Timestamp;
 
 @Entity
-
+@Table(name = "crawl_data")
 public class CrawlData {
     @Id
     @GeneratedValue(strategy= GenerationType.IDENTITY)
     private Long id;
+    @Column(name = "univ_name")
     private String u_name;
     private String college;
     private String type;

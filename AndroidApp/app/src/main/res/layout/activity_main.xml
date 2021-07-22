@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#00CDFF">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/activity_start_tv_couple"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="20dp"
+            android:text="K  -"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#FF0000"
+            android:textStyle="bold"/>
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:id="@+id/activity_start_img_shield"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/vaccine_icon" />
+
+        <TextView
+            android:id="@+id/activity_start_tv_vaccine"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="15dp"
+            android:text="가드"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#FF0000"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="30dp"
+        android:id="@+id/activity_start_et_id"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="60dp"
+        android:maxWidth="300dp"
+        android:focusable="true"
+        android:maxLength="15"
+        android:focusableInTouchMode="true"
+        android:hint="ID"
+        android:inputType="textUri"
+        android:textSize="12dp"
+        android:background="#ffffff" />
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="30dp"
+        android:id="@+id/activity_start_et_pw"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="35dp"
+        android:focusable="true"
+        android:inputType="textPassword"
+        android:focusableInTouchMode="true"
+        android:hint="PASSWORD"
+        android:maxLength="20"
+        android:textSize="12dp"
+        android:background="#ffffff" />
+    <Button
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:text="로그인"
+        android:id="@+id/activity_start_btn_login"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="40dp"
+        android:onClick="mainLoginClicked"
+        android:textSize="12dp" />
+
+    <Button
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:text="ID 발급 요청"
+        android:id="@+id/activity_start_btn_signup"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:onClick="mainSignupClicked"
+        android:textSize="12dp" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="35dp"
+            android:id="@+id/activity_start_img_findpw"
+            android:layout_marginLeft="55dp"
+            android:src="@drawable/dog_icon"
+            android:layout_marginTop="25dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="비밀번호를 잊어버리셨습니까?"
+            android:id="@+id/activity_start_tv_findpw"
+            android:layout_marginTop="35dp"
+            android:layout_marginLeft="20dp"
+            android:textSize="12dp"
+            android:onClick="mainFindClicked" />
+    </LinearLayout>
+</LinearLayout>

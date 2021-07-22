@@ -1,7 +1,11 @@
 package KM.KNUguard.service;
 
+import KM.KNUguard.domain.Login;
 import KM.KNUguard.domain.Member;
+import KM.KNUguard.repository.LoginMemberRepository;
 import KM.KNUguard.repository.MemberRepository;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
@@ -31,8 +35,8 @@ public class MemberService {
         return member.getId();
     }
 
-    private void validateDuplicateMember(Member member) {
-        memberRepository.findByName(member.getName())   //Return optional
+    public void validateDuplicateMember(Member member) {
+        memberRepository.findById(member.getId())   //Return optional
                 .ifPresent(m -> {
                     throw new IllegalStateException("이미 존재하는 회원입니다.");
                 });
@@ -45,6 +49,4 @@ public class MemberService {
     public Optional<Member> findOne(String memberId) {
         return memberRepository.findById(memberId);
     }
-
-
 }

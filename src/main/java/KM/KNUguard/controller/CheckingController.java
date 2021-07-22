@@ -2,13 +2,15 @@ package KM.KNUguard.controller;
 
 import KM.KNUguard.domain.CrawlData;
 import KM.KNUguard.service.CheckingService;
+import org.json.HTTP;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.*;
 
+import java.util.HashMap;
 import java.util.List;
+import java.util.Optional;
 
 @RestController
 @RequestMapping("/api")
@@ -28,10 +30,22 @@ public class CheckingController {
         return checkingService.getCPInfoUniv(univ_name, latitude, longitude);
     }
 
-    @GetMapping("/member/{latitude},{longitude}")
-    public List<CrawlData> getCPData(@PathVariable Float latitude,
-                                     @PathVariable Float longitude){
-        System.out.println("latitude = " + latitude);
-        return checkingService.getCPInfo(latitude, longitude);
+    @PostMapping("/getXY")
+    public HashMap<String, List<CrawlData>> getCPData(@RequestBody HashMap<String, String> lld) {
+        System.out.println("lld.getLat() " + lld.get("lat"));
+        System.out.println("lld.getLng() " + lld.get("lng"));
+
+        Optional<List> ol = checkingService.getCPInfo(Float.parseFloat(lld.get("lat")), Float.parseFloat(lld.get("lng")));
+
+        HashMap<String, List<CrawlData>> body = new HashMap<>();
+
+        if (ol.isPresent()) {
+            body.put("dataList", ol.get());
+            System.out.println("ol.get().size() = " + ol.get().size());
+        }
+        else{
+            body.put("empty", null);
+        }
+        return body;
     }
 }
