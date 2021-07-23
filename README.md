@@ -61,8 +61,10 @@ REST API
 ![Untitled_Diagram_(1)](https://user-images.githubusercontent.com/76172759/126724693-fc03fff1-14c1-42d7-bb66-398522690bd6.png)
 
 ### 어플리케이션 화면
-<img src="https://user-images.githubusercontent.com/76172759/126724707-5679af99-fbdd-4209-86ec-2d38a478ace0.png width="300" height="450"/>
-<img src="https://user-images.githubusercontent.com/76172759/126724710-d07c18a4-4acc-430c-888e-6b86a4127b52.png width="300" height="400"/>                                                                                                                                        
+<img src="https://user-images.githubusercontent.com/76172759/126724707-5679af99-fbdd-4209-86ec-2d38a478ace0.png" width="300" height="450"/>
+<img src="https://user-images.githubusercontent.com/76172759/126724710-d07c18a4-4acc-430c-888e-6b86a4127b52.png" width="300" height="400"/>
+<img src = "https://user-images.githubusercontent.com/76172759/126724707-5679af99-fbdd-4209-86ec-2d38a478ace0.png" width="50%" height="50%">
+<img src = "https://user-images.githubusercontent.com/76172759/126724710-d07c18a4-4acc-430c-888e-6b86a4127b52.png" width="40%" height="40%">
 ![스크린샷_23-07-2021_08 43 16](https://user-images.githubusercontent.com/76172759/126724707-5679af99-fbdd-4209-86ec-2d38a478ace0.png){: width="50%" height="50%"}
 ![스크린샷_23-07-2021_08 44 27](https://user-images.githubusercontent.com/76172759/126724710-d07c18a4-4acc-430c-888e-6b86a4127b52.png){: width="40%" height="40%"}
 
