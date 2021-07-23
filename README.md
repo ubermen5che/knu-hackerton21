@@ -18,7 +18,7 @@
 
 1인팀구성
 
-컴퓨터학부 16학번 권용준(팀장)
+권용준(팀장)
 
 ### 사용기술 및 언어
 
@@ -31,6 +31,7 @@ MySQL
 Python + BeautifulSoup(웹 크롤링)
 
 Android JAVA
+
 Volley (Http 전송) GoogleMap (지도)
 
 REST API
@@ -58,14 +59,12 @@ REST API
 - 교외로 나갈일이 있을때 해당 어플리케이션을 이용하여 확진자 발생구역을 확인 후 안전구역을 찾아 갈 수 있다.
 
 ### 시스템 아키텍쳐
-
-![ReadMe%20md%203058a2a7d6864c56bcdd661da6e2963c/Untitled_Diagram_(1).png](ReadMe%20md%203058a2a7d6864c56bcdd661da6e2963c/Untitled_Diagram_(1).png)
+![Untitled_Diagram_(1)](https://user-images.githubusercontent.com/76172759/126724693-fc03fff1-14c1-42d7-bb66-398522690bd6.png)
 
 ### 어플리케이션 화면
+![스크린샷_23-07-2021_08 43 16](https://user-images.githubusercontent.com/76172759/126724707-5679af99-fbdd-4209-86ec-2d38a478ace0.png)
+![스크린샷_23-07-2021_08 44 27](https://user-images.githubusercontent.com/76172759/126724710-d07c18a4-4acc-430c-888e-6b86a4127b52.png)
 
-![ReadMe%20md%203058a2a7d6864c56bcdd661da6e2963c/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA_23-07-2021_08.43.16.png](ReadMe%20md%203058a2a7d6864c56bcdd661da6e2963c/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA_23-07-2021_08.43.16.png)
-
-![ReadMe%20md%203058a2a7d6864c56bcdd661da6e2963c/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA_23-07-2021_08.44.27.png](ReadMe%20md%203058a2a7d6864c56bcdd661da6e2963c/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA_23-07-2021_08.44.27.png)
 
 ### 기능
 
