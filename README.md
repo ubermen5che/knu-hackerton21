@@ -15,25 +15,25 @@
 
 ### 팀 구성(팀명:KM)
 
-1인팀구성
+- 1인팀구성
 
-권용준(팀장)
+- 권용준(팀장)
 
 ### 사용기술 및 언어
 
-JAVA Spring
+- JAVA Spring
 
-JPA
+- JPA
 
-MySQL
+- MySQL
 
-Python + BeautifulSoup(웹 크롤링)
+- Python + BeautifulSoup(웹 크롤링)
 
-Android JAVA
+- Android JAVA
 
-Volley (Http 전송) GoogleMap (지도)
+- Volley (Http 전송) GoogleMap (지도)
 
-REST API
+- REST API
 
 ## **프로젝트 내용**
 
