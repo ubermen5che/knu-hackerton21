@@ -68,7 +68,9 @@ public class GeoCodingController {
         List<UnivData> uList = new ArrayList<>();
 
         for (UnivData c : cd) {
-            if(geocodingService.getGeoDataByAddress(c.getAddress()) == null)
+            if(geocodingService.getGeoDataByAddress(c.getAddress()) == null
+            || geocodingService.getGeoDataByAddress(c.getAddress()).get("lat") == null
+            || geocodingService.getGeoDataByAddress(c.getAddress()).get("lng") == null)
                 continue;
 
             UnivData new_ud = new UnivData();
