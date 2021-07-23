@@ -11,6 +11,7 @@
 
 ### 시연영상
 
+[![경북대학교 SW 해커톤 2021 KNU-GUARD 시연영상](http://img.youtube.com/vi/HmjkEZNpJrY/0.jpg)](https://youtu.be/HmjkEZNpJrY?t=0s) 
 [https://youtu.be/HmjkEZNpJrY](https://youtu.be/HmjkEZNpJrY)
 
 ### 팀 구성(팀명:KM)
