@@ -37,6 +37,13 @@ public class MemberController {
         System.out.println("loginJson.get(\"id\") = " + loginJson.get("id"));
         System.out.println("loginJson.get(\"pw\") = " + loginJson.get("pw"));
 
+        /**
+        Member member = new Member();
+        member.setId(loginJson.get("id"));
+        member.setPw(loginJson.get("pw"));
+        memberService.join(member);
+        **/
+
         HashMap<String, String> body = new HashMap<>();
 
         if(result.isPresent()){
