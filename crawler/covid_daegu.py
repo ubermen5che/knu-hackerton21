@@ -1,8 +1,6 @@
 import requests
 from bs4 import BeautifulSoup
-from html_table_parser import parser_functions as parser
 import json
-from datetime import datetime
 
 url = "http://covid19.daegu.go.kr/00937400.html"
 res = requests.get(url)

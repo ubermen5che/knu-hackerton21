@@ -1,12 +1,6 @@
 import requests
 from bs4 import BeautifulSoup
-from html_table_parser import parser_functions as parser
 import json
-from datetime import datetime
-from selenium import webdriver
-from selenium.webdriver.chrome.options import Options
-from konlpy.tag import *
-import re
 import copy
 
 #regex = re.compile()
@@ -31,9 +25,6 @@ crawled_data = {
     'confirmedDate' : None,
     'crawled_date' : None
 }
-
-okt = Okt()
-hannanum = Hannanum()
 
 domain = "http://knu.ac.kr"
 url = "http://knu.ac.kr/wbbs/wbbs/bbs/btin/list.action?bbs_cde=34&menu_idx=224"
