@@ -12,7 +12,6 @@
 ### 시연영상
 
 [![경북대학교 SW 해커톤 2021 KNU-GUARD 시연영상](http://img.youtube.com/vi/HmjkEZNpJrY/0.jpg)](https://youtu.be/HmjkEZNpJrY?t=0s) 
-[https://youtu.be/HmjkEZNpJrY](https://youtu.be/HmjkEZNpJrY)
 
 ### 팀 구성(팀명:KM)
 
@@ -64,8 +63,6 @@
 ### 어플리케이션 화면
 <img src="https://user-images.githubusercontent.com/76172759/126724707-5679af99-fbdd-4209-86ec-2d38a478ace0.png" width="300" height="500"/>
 <img src="https://user-images.githubusercontent.com/76172759/126724710-d07c18a4-4acc-430c-888e-6b86a4127b52.png" width="300" height="500"/>
-<img src = "https://user-images.githubusercontent.com/76172759/126724707-5679af99-fbdd-4209-86ec-2d38a478ace0.png" width="50%" height="50%">
-<img src = "https://user-images.githubusercontent.com/76172759/126724710-d07c18a4-4acc-430c-888e-6b86a4127b52.png" width="40%" height="40%">
 
 
 ### 기능
