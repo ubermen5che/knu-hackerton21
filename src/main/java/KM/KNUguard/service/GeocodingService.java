@@ -71,7 +71,7 @@ public class GeocodingService {
     public Map<String, String> getGeoDataByAddress(String completeAddress) {
         try {
             System.out.println("completeAddress = " + completeAddress);
-            String API_KEY = "AIzaSyBD0RE8E3pfwfydPTkrAPWrPUjJb4sd73Q";
+            String API_KEY = "";
             String surl = "https://maps.googleapis.com/maps/api/geocode/json?address="+ URLEncoder.encode(completeAddress, "UTF-8")+"&key="+API_KEY;
             URL url = new URL(surl);
             InputStream is = url.openConnection().getInputStream();
